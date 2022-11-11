@@ -1,7 +1,7 @@
-package test.java.Lab2;
+package test.java.CreationalPatterns;
 
-import main.java.Lab2.FactoryMethod.EmployeeFactoryMethod;
-import main.java.Lab2.FactoryMethod.EmployeeInterface;
+import main.java.CreationalPatterns.FactoryMethod.EmployeeFactoryMethod;
+import main.java.CreationalPatterns.FactoryMethod.EmployeeInterface;
 import org.junit.jupiter.api.Test;
 
 class FactoryMethodTest {

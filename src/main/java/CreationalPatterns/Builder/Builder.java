@@ -1,4 +1,4 @@
-package main.java.Lab2.Builder;
+package main.java.CreationalPatterns.Builder;
 
 public class Builder {
     private Lab2.Builder.Employee employee;

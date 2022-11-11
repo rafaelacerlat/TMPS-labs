@@ -1,4 +1,4 @@
-package main.java.Lab2.FactoryMethod;
+package main.java.CreationalPatterns.FactoryMethod;
 
 public interface EmployeeInterface {
     String getName();

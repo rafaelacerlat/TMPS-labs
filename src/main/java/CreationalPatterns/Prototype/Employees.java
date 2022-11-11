@@ -1,4 +1,4 @@
-package main.java.Lab2.Prototype;
+package main.java.CreationalPatterns.Prototype;
 import java.util.ArrayList;
 import java.util.List;
 import Lab2.Builder.Employee;

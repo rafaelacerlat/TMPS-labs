@@ -1,13 +1,12 @@
-package main.java.Lab2.FactoryMethod;
+package main.java.CreationalPatterns.FactoryMethod;
 
-public class ContractorEmployeeInterface implements EmployeeInterface {
-
+public class PartTimeEmployeeInterface implements EmployeeInterface {
     String name;
     int age;
     String department;
     String type;
 
-    public ContractorEmployeeInterface(String name, int age, String department, String type) {
+    public PartTimeEmployeeInterface(String name, int age, String department, String type) {
         this.name = name;
         this.age = age;
         this.department = department;
@@ -44,4 +43,3 @@ public class ContractorEmployeeInterface implements EmployeeInterface {
                 '}';
     }
 }
-

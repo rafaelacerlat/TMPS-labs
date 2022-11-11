@@ -1,6 +1,6 @@
-package test.java.Lab2;
+package test.java.CreationalPatterns;
 
-import main.java.Lab2.Singleton.Singleton;
+import main.java.CreationalPatterns.Singleton.Singleton;
 import org.junit.jupiter.api.Test;
 
 

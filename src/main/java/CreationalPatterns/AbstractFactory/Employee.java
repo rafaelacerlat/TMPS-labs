@@ -1,4 +1,4 @@
-package main.java.Lab2.AbstractFactory;
+package main.java.CreationalPatterns.AbstractFactory;
 
 public class Employee extends Member {
 

@@ -1,12 +1,12 @@
-package main.java.Lab2.FactoryMethod;
+package main.java.CreationalPatterns.FactoryMethod;
 
-public class PartTimeEmployeeInterface implements EmployeeInterface {
+public class FullTimeEmployeeInterface implements EmployeeInterface {
     String name;
     int age;
     String department;
     String type;
 
-    public PartTimeEmployeeInterface(String name, int age, String department, String type) {
+    public FullTimeEmployeeInterface(String name, int age, String department, String type) {
         this.name = name;
         this.age = age;
         this.department = department;
@@ -35,7 +35,7 @@ public class PartTimeEmployeeInterface implements EmployeeInterface {
 
     @Override
     public String toString() {
-        return "This is a part time employer:" + "\n{" +
+        return "This is a full time employer:" + "\n{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", department='" + department + '\'' +

@@ -1,4 +1,4 @@
-package main.java.Lab2.Singleton;
+package main.java.CreationalPatterns.Singleton;
 
 public class Singleton {
     private static Singleton instance;

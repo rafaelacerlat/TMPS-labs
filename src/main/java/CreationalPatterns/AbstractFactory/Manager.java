@@ -1,6 +1,6 @@
 package Lab2.AbstractFactory;
 
-import main.java.Lab2.AbstractFactory.Member;
+import main.java.CreationalPatterns.AbstractFactory.Member;
 
 public class Manager extends Member {
     private String name;

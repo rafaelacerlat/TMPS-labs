@@ -1,7 +1,7 @@
-package test.java.Lab2;
+package test.java.CreationalPatterns;
 
 
-import main.java.Lab2.Builder.Builder;
+import main.java.CreationalPatterns.Builder.Builder;
 import org.junit.jupiter.api.Test;
 
 class BuilderTest {

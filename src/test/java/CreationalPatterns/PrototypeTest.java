@@ -1,8 +1,7 @@
-package test.java.Lab2;
+package test.java.CreationalPatterns;
 
-import Lab2.Builder.Employee;
-import main.java.Lab2.Builder.Builder;
-import main.java.Lab2.Prototype.Employees;
+import main.java.CreationalPatterns.Builder.Builder;
+import main.java.CreationalPatterns.Prototype.Employees;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

@@ -1,9 +1,9 @@
-package test.java.Lab2;
+package test.java.CreationalPatterns;
 
-import main.java.Lab2.AbstractFactory.EmployeeFactory;
-import main.java.Lab2.AbstractFactory.ManagerFactory;
-import main.java.Lab2.AbstractFactory.Member;
-import main.java.Lab2.AbstractFactory.MemberFactory;
+import main.java.CreationalPatterns.AbstractFactory.EmployeeFactory;
+import main.java.CreationalPatterns.AbstractFactory.ManagerFactory;
+import main.java.CreationalPatterns.AbstractFactory.Member;
+import main.java.CreationalPatterns.AbstractFactory.MemberFactory;
 import org.junit.jupiter.api.Test;
 
 public class AbstractFactoryTest {

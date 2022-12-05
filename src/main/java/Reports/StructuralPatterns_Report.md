@@ -216,8 +216,91 @@ A structural design pattern that lets you split a large class or a set of closel
 The client (RefinedAbstraction) code can access only the Abstraction part without being concerned about the Implementation part. The abstraction and implementor are an interface or abstract class. The abstraction contains a reference to the implementor(Implementor implementation)
 ![structure-en](https://user-images.githubusercontent.com/41265306/205536554-448e3656-29fb-408e-a698-1e38446e6d8b.png)
 
+In the following example, we are building a bridge between Car objects and Combustible objects.
+The implementor is Combustible in this scenario.
+```
+public interface Combustible {
+    void hasCombustible();
+}
+```
+Car as a abstraction.
+```
+public abstract class Car {
+    protected Combustible combustible;
 
+    public Car(Combustible combustible){
+        this.combustible = combustible;
 
+    }
 
+    public abstract void getCarDetails();
+}
+```
+Diesel extends Combustible interface. This code does not change anything in abstraction.
+```
+public class Diesel implements Combustible{
+    @Override
+    public void hasCombustible() {
+        System.out.println("diesel");
+    }
+}
+```
+The following two are other concrete implementors.
+```
+public class Petrol implements Combustible{
+
+    @Override
+    public void hasCombustible() {
+        System.out.println("petrol");
+    }
+}
+```
+```
+public class Battery implements Combustible{
+
+    @Override
+    public void hasCombustible() {
+        System.out.println("electricity");
+    }
+}
+```
+Crossover extends Car abstract class.  It uses the Combustible interface in constructor.
+```
+public class Crossover extends Car {
+    public Crossover(Combustible combustible){
+        super(combustible);
+    }
+
+    @Override
+    public void getCarDetails() {
+        System.out.println("This crossover car has configuration for: ");
+        combustible.hasCombustible();
+    }
+}
+```
+And it's the same for SportsCar class.
+
+#### [Facade](https://github.com/rafaelacerlat/TMPS-labs/tree/main/src/main/java/StructuralPatterns/Project2/Facade)
+A structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+
+![structure (1)](https://user-images.githubusercontent.com/41265306/205538073-6097e9d7-e37d-4227-be97-51365386680d.png)
+
+In the implementation below, the facade class contains the method createCar() that has all the required steps for creating a car. 
+```
+public class CarFacade {
+    private CarEngine engine = new CarEngine();
+    private CarBody body = new CarBody();
+
+    public CarFacade(){}
+
+    public void createCar(){
+        System.out.println("Creating a car ...");
+        engine.setCarEngine();
+        body.setCarBody();
+        System.out.println("The car is ready!");
+    }
+}
+```
+Abstract Factory can serve as an alternative to Facade when you only want to hide the way the subsystem objects are created from the client code. Also, a Facade class can often be transformed into a Singleton since a single facade object is sufficient in most cases.
 
 

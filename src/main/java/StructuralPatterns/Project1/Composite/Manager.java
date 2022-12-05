@@ -27,7 +27,7 @@ public class Manager implements IEmployee {
         System.out.println("Manager: " + name + " (id=" + id + ") has the following subordinates:");
         for(IEmployee emp:employeeList)
         {
-            emp.getSubordinates();
+            emp.showEmployeeDetails();
         }
     }
 

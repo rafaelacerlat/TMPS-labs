@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71ada212-b023-4cc0-bced-d1b4e01dcab4" name="Changes" comment="added reports directory">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -25,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lab1" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,21 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/User/Desktop/FAF/FAF-sem5/TMPS/TMPS-labs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/FAF/FAF-sem5/TMPS/TMPS-labs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\FAF\FAF-sem5\TMPS\TMPS-labs\src\Lab1" />
@@ -68,44 +68,82 @@
       <recent name="main.java.Lab2.AbstractFactory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AbstractFactoryTest.testAbstractFactory">
-    <configuration name="Lab2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab2.Main" />
+  <component name="RunManager" selected="JUnit.BridgeTest.testBridge">
+    <configuration name="AdapterTest.testAdapter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TMPS-labs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lab2.*" />
+          <option name="PATTERN" value="StructuralPatterns.Project1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="StructuralPatterns" />
+      <option name="MAIN_CLASS_NAME" value="StructuralPatterns.AdapterTest" />
+      <option name="METHOD_NAME" value="testAdapter" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab1.SingleResponsability.Main" />
+    <configuration name="BridgeTest.testBridge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TMPS-labs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lab1.SingleResponsability.*" />
+          <option name="PATTERN" value="StructuralPatterns.Project1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="StructuralPatterns" />
+      <option name="MAIN_CLASS_NAME" value="StructuralPatterns.BridgeTest" />
+      <option name="METHOD_NAME" value="testBridge" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AbstractFactoryTest.testAbstractFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompositeTest.testAbstractFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TMPS-labs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.java.CreationalPatterns.*" />
+          <option name="PATTERN" value="StructuralPatterns.Project1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.java.Lab2" />
-      <option name="MAIN_CLASS_NAME" value="test.java.CreationalPatterns.AbstractFactoryTest" />
+      <option name="PACKAGE_NAME" value="StructuralPatterns" />
+      <option name="MAIN_CLASS_NAME" value="StructuralPatterns.CompositeTest" />
       <option name="METHOD_NAME" value="testAbstractFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DecoratorTest.testDecorator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TMPS-labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StructuralPatterns.Project1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StructuralPatterns" />
+      <option name="MAIN_CLASS_NAME" value="StructuralPatterns.DecoratorTest" />
+      <option name="METHOD_NAME" value="testDecorator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacadeTest.testFacade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TMPS-labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StructuralPatterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StructuralPatterns" />
+      <option name="MAIN_CLASS_NAME" value="StructuralPatterns.FacadeTest" />
+      <option name="METHOD_NAME" value="testFacade" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,10 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AbstractFactoryTest.testAbstractFactory" />
-        <item itemvalue="Application.Lab2.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BridgeTest.testBridge" />
+        <item itemvalue="JUnit.FacadeTest.testFacade" />
+        <item itemvalue="JUnit.DecoratorTest.testDecorator" />
+        <item itemvalue="JUnit.AdapterTest.testAdapter" />
+        <item itemvalue="JUnit.CompositeTest.testAbstractFactory" />
       </list>
     </recent_temporary>
   </component>

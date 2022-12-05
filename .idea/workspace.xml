@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71ada212-b023-4cc0-bced-d1b4e01dcab4" name="Changes" comment="added reports directory">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="71ada212-b023-4cc0-bced-d1b4e01dcab4" name="Changes" comment="lab3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +65,7 @@
       <recent name="main.java.Lab2.AbstractFactory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BridgeTest.testBridge">
+  <component name="RunManager" selected="JUnit.CompositeTest.testComposite">
     <configuration name="AdapterTest.testAdapter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TMPS-labs" />
       <extension name="coverage">
@@ -101,17 +98,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompositeTest.testAbstractFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompositeTest.testComposite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TMPS-labs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StructuralPatterns.Project1.*" />
+          <option name="PATTERN" value="StructuralPatterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="StructuralPatterns" />
       <option name="MAIN_CLASS_NAME" value="StructuralPatterns.CompositeTest" />
-      <option name="METHOD_NAME" value="testAbstractFactory" />
+      <option name="METHOD_NAME" value="testComposite" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CompositeTest.testComposite" />
         <item itemvalue="JUnit.BridgeTest.testBridge" />
         <item itemvalue="JUnit.FacadeTest.testFacade" />
         <item itemvalue="JUnit.DecoratorTest.testDecorator" />
         <item itemvalue="JUnit.AdapterTest.testAdapter" />
-        <item itemvalue="JUnit.CompositeTest.testAbstractFactory" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668505460412</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="lab3">
+      <created>1670204049402</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670204049402</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +265,8 @@
     <MESSAGE value="lab1" />
     <MESSAGE value="lab2" />
     <MESSAGE value="added reports directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="added reports directory" />
+    <MESSAGE value="lab3" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TMPS_labs$Lab2_Main.ic" NAME="Lab2.Main Coverage Results" MODIFIED="1668119642245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -20,6 +20,6 @@ public class CompositeTest {
         ((Manager) manager).addEmployee(developer2);
         ((Manager) manager).addEmployee(humanResources);
 
-        manager.showEmployeeDetails();
+        manager.getSubordinates();
     }
 }

@@ -167,5 +167,42 @@ This project is about an online shopping store, and some of its functionalities.
   Item 'Notebook' has been added to the 'New Releases' Category 
   Item 'Notebook' has been deleted from the 'New Releases' Category 
   ```
+* [**Template**](https://github.com/rafaelacerlat/TMPS-labs/tree/main/src/main/java/BehavioralPatterns/Template) is a behavioral design pattern that defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+ 
+  Template method design pattern has two components. An abstract parent class and one or more concrete child classes extending that parent class. The abstract parent class is the template class used to define the algorithmic steps and preserve it across implementations. Child class contains details of the abstract methods.
 
 
+  ![image](https://user-images.githubusercontent.com/41265306/209974776-8ebdf83d-8d66-4b1b-8a8b-b805318331a7.png)
+  
+  The above UML diagram deals with order processing flow. The [OrderProcessTemplate](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Template/OrderProcessTemplate.java) class is an abstract class containing the algorithm skeleton. As shown, processOrder() is the method that contains the process steps. We have two subclasses [NetOrder](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Template/NetOrder.java) and [StoreOrder](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Template/StoreOrder.java) which has the same order processing steps.
+
+  So the overall algorithm used to process an order is defined in the base class and used by the subclasses. But the way individual operations are performed vary depending on the subclass.
+
+  The test for this pattern looks in the following way:
+  ```
+  public class TemplateTest {
+    @Test
+    public void testTemplate(){
+        System.out.println("--- NetOrder instance of the Template:");
+        OrderProcessTemplate netOrder = new NetOrder();
+        netOrder.processOrder();
+        System.out.println("--- StoreOrder instance of the Template:");
+        OrderProcessTemplate storeOrder = new StoreOrder();
+        storeOrder.processOrder();
+    }
+  }
+  ```
+  
+  And the output:
+  ```
+  --- NetOrder instance of the Template:
+  Item added to online shopping cart,
+  Get gift wrap preference,
+  Get delivery address.
+  Online Payment through Netbanking/Cards.
+  Ship the item through post to delivery address
+  --- StoreOrder instance of the Template:
+  Customer chooses the item from shelf.
+  Pays at counter through cash/POS
+  Item deliverd to in delivery counter.
+  ```

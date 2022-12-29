@@ -131,8 +131,12 @@ This project is about an online shopping store, and some of its functionalities.
    1349.10 paid using Paypal.
    ```
 
+* [**Command**](https://github.com/rafaelacerlat/TMPS-labs/tree/main/src/main/java/BehavioralPatterns/Command) is a behavioral design pattern that turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
 
-* 
+  In command pattern, the request is send to the invoker and invoker pass it to the encapsulated command object. Command object passes the request to the appropriate method of Receiver to perform the specific action. The client program create the receiver object and then attach it to the Command. Then it creates the invoker object and attach the command object to perform an action. Now when client program executes the action, it’s processed based on the command and receiver object.
 
+  For this project, we can separate the products into categories. Therefore, we have a [Category](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Command/Category.java) class that stores the corresponding products/items in a list. 
+  
+  Then we have an [ICommand](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Command/ICommand.java) interface which serves as a Command Object. Now we need to create implementations for all the different types of action performed by the receiver. Since we have two actions we will create two Command implementations, [Add Command](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Command/AddCommand.java) and [Delete Command](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Command/DeleteCommand.java). Each of them will forward the request to the appropriate method of receiver.
 
 

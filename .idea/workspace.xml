@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71ada212-b023-4cc0-bced-d1b4e01dcab4" name="Changes" comment="lab3" />
+    <list default="true" id="71ada212-b023-4cc0-bced-d1b4e01dcab4" name="Changes" comment="lab3 changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Lab1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,82 +68,82 @@
       <recent name="main.java.Lab2.AbstractFactory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CompositeTest.testComposite">
-    <configuration name="AdapterTest.testAdapter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TemplateTest.testTemplate">
+    <configuration name="ChainOfResponsabilityTest.testCOR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TMPS-labs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StructuralPatterns.Project1.*" />
+          <option name="PATTERN" value="BehavioralPatterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="StructuralPatterns" />
-      <option name="MAIN_CLASS_NAME" value="StructuralPatterns.AdapterTest" />
-      <option name="METHOD_NAME" value="testAdapter" />
+      <option name="PACKAGE_NAME" value="BehavioralPatterns" />
+      <option name="MAIN_CLASS_NAME" value="BehavioralPatterns.ChainOfResponsabilityTest" />
+      <option name="METHOD_NAME" value="testCOR" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BridgeTest.testBridge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommandTest.testCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TMPS-labs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StructuralPatterns.Project1.*" />
+          <option name="PATTERN" value="BehavioralPatterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="StructuralPatterns" />
-      <option name="MAIN_CLASS_NAME" value="StructuralPatterns.BridgeTest" />
-      <option name="METHOD_NAME" value="testBridge" />
+      <option name="PACKAGE_NAME" value="BehavioralPatterns" />
+      <option name="MAIN_CLASS_NAME" value="BehavioralPatterns.CommandTest" />
+      <option name="METHOD_NAME" value="testCommand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompositeTest.testComposite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ObserverTest.testObserver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TMPS-labs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StructuralPatterns.*" />
+          <option name="PATTERN" value="BehavioralPatterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="StructuralPatterns" />
-      <option name="MAIN_CLASS_NAME" value="StructuralPatterns.CompositeTest" />
-      <option name="METHOD_NAME" value="testComposite" />
+      <option name="PACKAGE_NAME" value="BehavioralPatterns" />
+      <option name="MAIN_CLASS_NAME" value="BehavioralPatterns.ObserverTest" />
+      <option name="METHOD_NAME" value="testObserver" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DecoratorTest.testDecorator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StrategyTest.testStrategy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TMPS-labs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StructuralPatterns.Project1.*" />
+          <option name="PATTERN" value="BehavioralPatterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="StructuralPatterns" />
-      <option name="MAIN_CLASS_NAME" value="StructuralPatterns.DecoratorTest" />
-      <option name="METHOD_NAME" value="testDecorator" />
+      <option name="PACKAGE_NAME" value="BehavioralPatterns" />
+      <option name="MAIN_CLASS_NAME" value="BehavioralPatterns.StrategyTest" />
+      <option name="METHOD_NAME" value="testStrategy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FacadeTest.testFacade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TemplateTest.testTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TMPS-labs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StructuralPatterns.*" />
+          <option name="PATTERN" value="BehavioralPatterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="StructuralPatterns" />
-      <option name="MAIN_CLASS_NAME" value="StructuralPatterns.FacadeTest" />
-      <option name="METHOD_NAME" value="testFacade" />
+      <option name="PACKAGE_NAME" value="BehavioralPatterns" />
+      <option name="MAIN_CLASS_NAME" value="BehavioralPatterns.TemplateTest" />
+      <option name="METHOD_NAME" value="testTemplate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CompositeTest.testComposite" />
-        <item itemvalue="JUnit.BridgeTest.testBridge" />
-        <item itemvalue="JUnit.FacadeTest.testFacade" />
-        <item itemvalue="JUnit.DecoratorTest.testDecorator" />
-        <item itemvalue="JUnit.AdapterTest.testAdapter" />
+        <item itemvalue="JUnit.TemplateTest.testTemplate" />
+        <item itemvalue="JUnit.ChainOfResponsabilityTest.testCOR" />
+        <item itemvalue="JUnit.StrategyTest.testStrategy" />
+        <item itemvalue="JUnit.CommandTest.testCommand" />
+        <item itemvalue="JUnit.ObserverTest.testObserver" />
       </list>
     </recent_temporary>
   </component>
@@ -228,14 +231,7 @@
       <option name="project" value="LOCAL" />
       <updated>1668505460412</updated>
     </task>
-    <task id="LOCAL-00010" summary="lab3">
-      <created>1670204049402</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1670204049402</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,8 +261,73 @@
     <MESSAGE value="lab1" />
     <MESSAGE value="lab2" />
     <MESSAGE value="added reports directory" />
-    <MESSAGE value="lab3" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab3" />
+    <option name="LAST_COMMIT_MESSAGE" value="added reports directory" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BehavioralPatterns/ChainOfResponsabilityTest.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BehavioralPatterns/ChainOfResponsabilityTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BehavioralPatterns/ChainOfResponsabilityTest.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BehavioralPatterns/ChainOfResponsability/DiscountByVoucher.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BehavioralPatterns/ChainOfResponsability/DiscountByVoucher.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BehavioralPatterns/ChainOfResponsability/DiscountByVoucher.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BehavioralPatterns/ChainOfResponsability/FirstPurchase.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BehavioralPatterns/ChainOfResponsability/FirstPurchase.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BehavioralPatterns/ChainOfResponsability/FirstPurchase.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BehavioralPatterns/ChainOfResponsability/Discount.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BehavioralPatterns/ChainOfResponsability/Discount.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BehavioralPatterns/ChainOfResponsability/Discount.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TMPS_labs$Lab2_Main.ic" NAME="Lab2.Main Coverage Results" MODIFIED="1668119642245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

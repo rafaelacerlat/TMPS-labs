@@ -138,5 +138,34 @@ This project is about an online shopping store, and some of its functionalities.
   For this project, we can separate the products into categories. Therefore, we have a [Category](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Command/Category.java) class that stores the corresponding products/items in a list. 
   
   Then we have an [ICommand](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Command/ICommand.java) interface which serves as a Command Object. Now we need to create implementations for all the different types of action performed by the receiver. Since we have two actions we will create two Command implementations, [Add Command](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Command/AddCommand.java) and [Delete Command](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Command/DeleteCommand.java). Each of them will forward the request to the appropriate method of receiver.
+  Invoker [Product Manager](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Command/ProductManager.java) is a simple class that encapsulates the Command and passes the request to the command object to process it.
+  
+  Let’s move now to create our command pattern example client program:
+  ```
+  public class CommandTest {
+    @Test
+    public void testCommand(){
+
+        //Add an item to the New Releases category
+        Product laptop = new Product("A001", "Notebook", 999);
+        Category category = new Category("New Releases");
+        ICommand command = new AddCommand(laptop, category);
+        ProductManager productManager = new ProductManager();
+        productManager.setCommand(command);
+        productManager.process();
+
+        //Delete an item from the New Releases category
+        command = new DeleteCommand(laptop, category);
+        productManager.setCommand(command);
+        productManager.process();
+
+    }
+  }
+  ```
+  And the output is as follows:
+  ```
+  Item 'Notebook' has been added to the 'New Releases' Category 
+  Item 'Notebook' has been deleted from the 'New Releases' Category 
+  ```
 
 

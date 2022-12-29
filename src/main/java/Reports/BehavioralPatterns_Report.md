@@ -25,6 +25,31 @@ This project is about an online shopping store, and some of its functionalities.
   Then, we define the [User](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/User.java) class (Concrete Observer), which contains a notify() method for receiving price drop notifications.
   
   After having the User class, then we define the [ProductSubject](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Observer/ProductSubject.java) class (Concrete Subject). This class contains three methods of adding observers, removing observers, and notifying observers.
+  
+  Next, let’s verify the function of the product price reduction reminder:
+  ```
+  public class ObserverTest {
+    @Test
+    public void testObserver() {
+        Product laptop = new Product("A001", "Notebook", 999);
+        ProductSubject productSubject = new ProductSubject(laptop.getPid());
+
+        User user1 = new User("U001", "Emma");
+        User user2 = new User("U002", "John");
+
+        productSubject.addObserver(user1);
+        productSubject.addObserver(user2);
+
+        productSubject.notifyObservers(laptop, 899);
+    }
+  }
+  ```
+  When the above code runs successfully, the console will output the following results:
+  ```
+  Dear Emma,the product you are concerned about: Notebook,Price drop of 100.0 $.
+  Dear John,the product you are concerned about: Notebook,Price drop of 100.0 $.
+  ```
+
 
 * 
 

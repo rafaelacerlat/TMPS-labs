@@ -51,5 +51,13 @@ This project is about an online shopping store, and some of its functionalities.
   ```
 
 
+* [**Strategy**](https://github.com/rafaelacerlat/TMPS-labs/tree/main/src/main/java/BehavioralPatterns/Strategy) is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable. This pattern is used when we have multiple algorithm for a specific task and client decides the actual implementation to be used at runtime.
+  
+  For this project, we implement a simple Shopping Cart where we have two payment strategies - using Credit Card or using PayPal. First of all we will create the [PaymentStrategy](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Strategy/PaymentStrategy.java) interface for our strategy pattern example, in our case to pay the amount passed as argument.
+  
+  Now we will have to create concrete implementation of algorithms for payment using [Credit Card](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Strategy/CreditCard.java) or through [PayPal](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Strategy/Paypal.java).
+
 * 
+
+
 

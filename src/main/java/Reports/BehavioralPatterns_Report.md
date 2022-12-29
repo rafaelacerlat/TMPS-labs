@@ -88,7 +88,49 @@ This project is about an online shopping store, and some of its functionalities.
 
 * [**Chain of responsability**](https://github.com/rafaelacerlat/TMPS-labs/tree/main/src/main/java/BehavioralPatterns/ChainOfResponsability) is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
-  ![image](https://user-images.githubusercontent.com/41265306/209970296-07f61f43-73f6-4f04-bf40-b6d7da0dd0a7.png)
+  In this example, like most online sellers, we propose discounts under conditions. As we want our clients to come back regularly to place other orders, we have decided to compute and apply the best discount for our clients.
+  
+    ![image](https://user-images.githubusercontent.com/41265306/209970296-07f61f43-73f6-4f04-bf40-b6d7da0dd0a7.png)
+
+  The pattern is conceptually simple. It is a linked list of rules where each concrete rule shares a common interface in order to manipulate them independently of their implementation. The common interface provides a method to execute the rule logic.
+  
+  So, we create a functional interface [Chain Discount](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/ChainOfResponsability/ChainDiscount.java) to have the handleRequest() method. Add a [Discount](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/ChainOfResponsability/Discount.java) abstract  class to support some operations of concrete class. And then add the implementation class for each kind of discount, [First Purchase](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/ChainOfResponsability/FirstPurchase.java) and [Discount by Voucher](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/ChainOfResponsability/DiscountByVoucher.java).
+  
+  And finally a method to execute them:
+  ```
+  public class ChainOfResponsabilityTest {
+    @Test
+    public void testCOR(){
+        Product laptop = new Product("A001", "Notebook", 999);
+        Product phone = new Product("B003","Samsung", 500);
+
+        Voucher voucher1 = new Voucher("VOUCHER_1", 0.9);
+        Voucher voucher2 = new Voucher("NEWYEAR", 0.8);
+
+        ShoppingCart cart = new ShoppingCart(1);
+
+        cart.addItem(laptop);
+        cart.addItem(phone);
+
+        cart.addVoucher(voucher1);
+        cart.addVoucher(voucher2);
+
+        cart.calculateSubTotal();
+
+        FirstPurchase firstPurchase = new FirstPurchase(null, cart);
+        DiscountByVoucher discountByVoucher = new DiscountByVoucher(firstPurchase, cart);
+
+        firstPurchase.handleRequest();
+
+        cart.pay(new Paypal("testEmail@randommailservice.com", "password"));
+    }
+  }
+  ```
+   This is the output, and we can see that the discount was applied:
+   ```
+   1349.10 paid using Paypal.
+   ```
+
 
 * 
 

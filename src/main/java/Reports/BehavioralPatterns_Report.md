@@ -56,6 +56,39 @@ This project is about an online shopping store, and some of its functionalities.
   For this project, we implement a simple Shopping Cart where we have two payment strategies - using Credit Card or using PayPal. First of all we will create the [PaymentStrategy](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Strategy/PaymentStrategy.java) interface for our strategy pattern example, in our case to pay the amount passed as argument.
   
   Now we will have to create concrete implementation of algorithms for payment using [Credit Card](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Strategy/CreditCard.java) or through [PayPal](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Strategy/Paypal.java).
+  
+  Then, we can implement [Shopping Cart](https://github.com/rafaelacerlat/TMPS-labs/blob/main/src/main/java/BehavioralPatterns/Strategy/ShoppingCart.java) and payment method will require input as Payment strategy.
+  
+  Let’s test our strategy pattern example setup with a simple program:
+  ```
+  public class StrategyTest {
+    @Test
+    public void testStrategy() {
+        ShoppingCart cart = new ShoppingCart(3); // this is the third order
+
+        Product laptop = new Product("A001", "Notebook", 999);
+        Product phone = new Product("B003","Samsung", 500);
+
+        cart.addItem(laptop);
+        cart.addItem(phone);
+
+        cart.calculateSubTotal();
+
+        cart.pay(new Paypal("testEmail@randommailservice.com", "password"));
+
+        cart.pay(new CreditCard("Rafaela", "1234567890123456", "786", "12/22"));
+    }
+  }
+  ```
+  Output of above program is:
+  ```
+  1499.0 paid using Paypal.
+  1499.0 paid with credit/debit card
+  ```
+
+* [**Chain of responsability**](https://github.com/rafaelacerlat/TMPS-labs/tree/main/src/main/java/BehavioralPatterns/ChainOfResponsability) is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+
+  ![image](https://user-images.githubusercontent.com/41265306/209970296-07f61f43-73f6-4f04-bf40-b6d7da0dd0a7.png)
 
 * 
 
